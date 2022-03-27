@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <script src="js/script.js"></script>
+    <title>News Portal | Nepali</title>
+</head>
+
+<body>
+
+
+
+    <header>
+
+        <!-- -------------------navbar----------------------------------------------- -->
+        <nav id="navbar">
+            <div class="bars" id="bar">
+                <span class="fal fa-bars"></span>
+            </div>
+            <div class="menu wrapper">
+                <a href="">राष्ट्रिय</a>
+                <a href="">राजनीति</a>
+                <a href="">व्यापार</a>
+                <a href="">उपत्यका</a>
+                <a href="">अन्तर्राष्ट्रिय</a>
+                <a href="">खेलकुद</a>
+                <a href="">संस्कृति र कला</a>
+
+            </div>
+
+        </nav>
+    </header>
+    <!-- -------------------navbar----------------------------------------------- -->
+
+    <!-- -------------------------nav and sidebar-------------------------------------------  -->
+
+    <nav class="sidebar">
+        <div class="text">कोटीहरू</div>
+        <ul>
+            <li><a href="">राष्ट्रिय</a></li>
+            <li><a href="">राजनीति</a></li>
+            <li><a href="">व्यापार</a></li>
+
+            <li>
+                <a href="#" class="val-btn">उपत्यका
+                    <!-- <span class="fal fa-angle-down first"></span> -->
+                </a>
+
+                <!-- <ul class="val-show">
+                    <li><a href="#">Kathmandu</a></li>
+                    <li><a href="#">Lalitpur</a></li>
+                    <li><a href="#">Bhaktapur</a></li>
+                </ul> -->
+            </li>
+
+            <li><a href="#">अन्तर्राष्ट्रिय</a></li>
+
+            <li>
+                <a href="#" class="spor-btn">खेलकुद
+                    <!-- <span class="fal fa-angle-down second"></span> -->
+                </a>
+
+                <!-- <ul class="spor-show">
+                    <li><a href="#">Cricket</a></li>
+                    <li><a href="#">football</a></li>
+                    <li><a href="#">international Sports</a></li>
+
+                </ul> -->
+            </li>
+
+            <li><a href="#">संस्कृति र कला</a></li>
+            <li><a href="#">यात्रा</a></li>
+            <li><a href="#">स्वास्थ्य</a></li>
+            <li><a href="#">खाना</a></li>
+            <li><a href="#">अर्थतन्त्र</a></li>
+            <li><a href="#">संसार</a></li>
+            <li><a href="#">विज्ञान र प्रविधि</a></li>
+            <li><a href="#">जलवायु र वातावरण</a></li>
+            <li><a href="#">अपराध</a></li>
+            <li><a href="#">चुनाव</a></li>
+            <li><a href="#">व्यापार</a></li>
+            <li><a href="#">अनुसन्धान</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+    </nav>
+    <!-- -------------------------nav and sidebar-------------------------------------------  -->
+
+
+    <!-- ---------------------------------------script for sidebar---------------------------------------------- -->
+
+    <!-- ==================(Please work Carefully)============================== -->
+
+    <script>
+        $('.bars').click(function () {
+            $(this).toggleClass("click");
+            $('.sidebar').toggleClass("show");
+        })
+
+
+
+
+        $('.val-btn').click(function () {
+            $('nav ul .val-show').toggleClass("show");
+            $('nav ul .first').toggleClass("rotate");
+
+        });
+        $('.spor-btn').click(function () {
+            $('nav ul .spor-show').toggleClass("show1");
+            $('nav ul .second').toggleClass("rotate");
+        });
+
+        $('nav ul li').click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+        })
+    </script>
+
+    <!-- ---------------------------------------script for sidebar---------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+    <!-- ---------------------main head------------------------------------------ -->
+    <div class="start_cont wrapper">
+
+        <div class="logo">
+            <a href=""> <img src="img/logo.PNG" alt=""> </a>
+        </div>
+
+        <span class="date">बिहीबार, मार्च २०, २०२२</span>
+
+    </div>
+
+
+    <!-- ----------------------------------------main-trending----------------------------------------- -->
+    <section id="main wrapper">
+        <div class="row1 wrapper">
+            <h4 class="h4-main">Trending Now:</h4>
+            <ul>
+                <li> <a href="#">कोभिड -19</a> </li>
+                <li> <a href="#">जीवनशैली</a> </li>
+                <li> <a href="#">चुनाव</a> </li>
+                <li> <a href="#">नेकपा एमाले</a> </li>
+                <li> <a href="#">युक्रेन रसिया तनाव</a> </li>
+                <li> <a href="#">प्रदूषण</a> </li>
+                <li> <a href="#">पेट्रोलको मूल्य बढ्यो</a> </li>
+
+            </ul>
+        </div>
+
+
+
+
+        <!-- --------------trending-script--------------------------------------- -->
+        <script>
+            $('.row1 ul li').click(function () {
+                $(this).addClass("active").siblings().removeClass("active");
+            })
+        </script>
+
+        <!-- --------------trending-script--------------------------------------- -->
+
+        <!-- ----------------------------------------main-trending----------------------------------------- -->
+
+        <!-- --------------------------------------main-ads------------------------------------- -->
+
+        <div class="ads">
+            <div class="ad wrapper">
+                <a href=""> <img src="img/ad1.jpeg" alt=""></a>
+            </div>
+
+        </div>
+
+        <!-- <div class="ads">
+            <div class="ad wrapper">
+                <a href=""> <img src="img/ad1.jpeg" alt=""></a>
+            </div>
+
+        </div> -->
+
+
+        <!-- ---------------------------main-news-------------------------------- -->
+
+        <!-- <div class="height-less">
+
+            <h2 class="h2-main wrapper heading">
+                National
+            </h2>
+        </div> -->
+
+        <div class="big-news wrapper">
+            <h1 class="h1-main">        
+                देउवाले पदभार ग्रहण गरेपछि पहिलो औपचारिक विदेश भ्रमण अप्रिल १–३ मा भारत जाने भएका छन्
+            </h1>
+            <div class="big-image">
+                <a href=""> <img src="img/big-news.jpg" alt=""></a>
+            </div>
+
+            <p class="p-main gap">
+                पश्चिमा मुलुकहरूको कडा प्रतिबन्धको सामना गरिरहेको रुसले आफ्नो प्रमुख निर्यातको रुपमा रहेको तेल र ग्याँसको बिक्रीमा बिटक्वाइनमार्फत् पनि भुक्तानी स्वीकार गर्ने तयारी गरिरहेको छ । रुसका एक वरिष्ठ सांसद पाभेल जाभाल्नीका 
+            </p>
+
+
+        </div>
+
+        <div class="ads">
+            <div class="ad wrapper">
+                <a href=""> <img src="img/ad1.jpeg" alt=""></a>
+            </div>
+
+        </div>
+
+
+        <div class="big-news wrapper">
+            <h1 class="h1-main">
+                नेपाल र चीनबीच नौवटा सम्झौतामा हस्ताक्षर
+            </h1>
+            <div class="big-image">
+                <a href=""> <img src="img/big-news1.jpg" alt=""> </a>
+            </div>
+
+            <p class="p-main gap">
+                पश्चिमा मुलुकहरूको कडा प्रतिबन्धको सामना गरिरहेको रुसले आफ्नो प्रमुख निर्यातको रुपमा रहेको तेल र ग्याँसको बिक्रीमा बिटक्वाइनमार्फत् पनि भुक्तानी
+            </p>
+
+        </div>
+
+
+        <!-- ---------------------------main-news-------------------------------- -->
+
+
+        <!-- --------------------------ad-here----------------------------------------- -->
+
+        <div class="ads">
+            <div class="ad wrapper">
+                <a href=""> <img src="img/ad1.jpeg" alt=""></a>
+            </div>
+
+        </div>
+        <!-- --------------------------ad-here----------------------------------------- -->
+
+
+        <div class="height-less">
+
+            <h2 class="h2-main wrapper heading">
+                राष्ट्रिय
+            </h2>
+        </div>
+        <div class="second-big wrapper">
+
+            <div class="sec-1">
+                <div class="sec-image">
+                    <a href=""> <img src="img/big-news.jpg" alt=""></a>
+                </div>
+                <a href="">
+                    <h3 class="h3-main">
+                        नेपाल र चीनबीच नौवटा सम्झौतामा हस्ताक्षर भएको छ
+                    </h3>
+                </a>
+                <p class="p-main">
+                    पश्चिमा मुलुकहरूको कडा प्रतिबन्धको सामना गरिरहेको रुसले आफ्नो प्रमुख निर्यातको रुपमा रहेको तेल र ग्याँसको बिक्रीमा बिटक्वाइनमार्फत् पनि भुक्तानी
+                </p>
+            </div>
+
+            <div class="sec-2">
+                <div class="sec2-box">
+                    <div class="sec1-image">
+                        <a href=""><img src="img/pri-img.jpeg" alt=""> </a>
+                    </div>
+                    <a href="">
+                        <h5 class="h5-main">
+                            सिंहदरबारमा चिनियाँ विदेशमन्त्री
+                        </h5>
+                    </a>
+                    <p class="p-main">
+                        पश्चिमा मुलुकहरूको कडा प्रतिबन्धको सामना गरिरहेको रुसले आफ्नो प्रमुख निर्यातको रुपमा
+                    </p>
+                </div>
+
+                <div class="sec2-box">
+                    <div class="sec1-image">
+                        <a href=""> <img src="img/pri-img.jpeg" alt=""> </a>
+                    </div>
+                    <a href="">
+                        <h5 class="h5-main">
+                            सिंहदरबारमा चिनियाँ विदेशमन्त्री
+                        </h5>
+                    </a>
+                    <p class="p-main">
+                        पश्चिमा मुलुकहरूको कडा प्रतिबन्धको सामना गरिरहेको रुसले आफ्नो प्रमुख निर्यातको रुपमा
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="height-less">
+
+            <h2 class="h2-main wrapper heading">
+                उपत्यका
+            </h2>
+        </div>
+
+        <div class="main-news wrapper">
+
+
+            <div class="main-col">
+
+                <a href="">
+                    <h2 class="h2-main">सिंहदरबारमा चिनियाँ विदेशमन्त्री</h2>
+                </a>
+                <div class="main-photo">
+                    <a href=""><img src="img/main.jpeg" alt=""></a>
+                </div>
+                <p class="p-main">
+                    पश्चिमा मुलुकहरूको कडा प्रतिबन्धको सामना गरिरहेको रुसले आफ्नो प्रमुख निर्यातको रुपमा रहेको तेल र ग्याँसको बिक्रीमा बिटक्वाइनमार्फत् पनि भुक्तानी स्वीकार गर्ने तयारी गरिरहेको छ । रुसका एक वरिष्ठ सांसद पाभेल जाभाल्नीका अनुसार मित्रराष्ट्रहरूले तेल र ग्याँसको रकम क्रिप्टोकरेन्सी वा आफ्नो स्थानीय मुद्रामा भुक्तान गर्न सक्नेछन् । ...
+                </p>
+
+            </div>
+
+            <div class="pri-col">
+                <div class="pri-news border">
+                    <div class="pri-photo">
+                        <a href=""> <img src="img/pri-img.jpeg" alt=""> </a>
+                    </div>
+
+                    <a href="">
+                        <h3 class="h3-main">चिनियाँ विदेशमन्त्री वाङले ४६ घण्टा काठमाडौंमा यसरी बिताए</h3>
+                    </a>
+                    <p class="p-main">
+                        पश्चिमा मुलुकहरूको कडा प्रतिबन्धको सामना गरिरहेको रुसले आफ्नो प्रमुख निर्यातको रुपमा रहेको तेल र ग्याँसको बिक्रीमा
+                    </p>
+                </div>
+
+                <div class="pri-news">
+                    <div class="pri-photo">
+                        <a href=""> <img src="img/pri-img2.jpeg" alt=""> </a>
+                    </div>
+
+                    <a href="">
+                        <h3 class="h3-main">
+                            रामेछापमा अस्थायी प्रहरीका लागि १६ सयभन्दा बढी निवेदन परेका छन्</h3>
+                    </a>
+                    <p class="p-main">
+                        पश्चिमा मुलुकहरूको कडा प्रतिबन्धको सामना गरिरहेको रुसले आफ्नो प्रमुख निर्यातको रुपमा रहेको तेल र ग्याँसको बिक्रीमा
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <!-- ---------------------------main-news-------------------------------- -->
+
+
+        <!-- --------------------------ad-here----------------------------------------- -->
+
+        <!-- <div class="ads">
+            <div class="ad wrapper">
+                <a href=""> <img src="img/ad1.jpeg" alt=""></a>
+            </div>
+
+        </div> -->
+        <!-- --------------------------ad-here----------------------------------------- -->
+
+
+        <div class="height-less">
+
+            <h2 class="h2-main wrapper heading">
+               सामान्य समाचार
+            </h2>
+        </div>
+
+
+
+        <div class="news wrapper">
+
+            <!-- =========================column-1========================================================= -->
+            <div class="col1 ">
+
+                <div class="col1-news border">
+                    <a href="">
+                        <h5 class="h5-main">
+                            भारतबाट आयात घटेपछि तीन क्षेत्रका उद्योगको विद्युत् आपूर्ति बन्द भएको छ</h5>
+                    </a>
+
+                    <a href=""><span class="writer">By name of writer</span></a>
+
+                    <div class="news-img">
+                        <div class="newsimg">
+                            <a href=""><img src="img/news1.jfif" alt=""></a>
+                        </div>
+                        <p class="p-main">पश्चिमा मुलुकहरूको कडा प्रतिबन्धको सामना गरिरहेको रुसले आफ्नो प्रमुख निर्यातको रुपमा रहेको तेल र ग्याँसको बिक्रीमा बिटक्वाइनमार्फत् पनि भुक्तानी स्वीकार गर्ने तयारी गरिरहेको छ । रुसका एक वरिष्ठ सांसद पाभेल जाभाल्नीका अनुसार मित्रराष्ट्रहरूले तेल र ग्याँसको रकम क्रिप्टोकरेन्सी वा आफ्नो स्थानीय मुद्रामा भुक्तान गर्न सक्नेछन् । </p>
+
+
+
+
+                    </div>
+                </div>
+
+
+                <div class="col1-news border">
+                    <a href="">
+                        <h5 class="h5-main">भारतबाट आयात घटेपछि तीन क्षेत्रका उद्योगको विद्युत् आपूर्ति बन्द भएको छ</h5>
+                    </a>
+
+                    <a href=""><span class="writer">By name of writer</span></a>
+
+                    <div class="news-img">
+                        <div class="newsimg">
+                            <a href=""><img src="img/news2.jpg" alt=""></a>
+                        </div>
+                        <p class="p-main">पश्चिमा मुलुकहरूको कडा प्रतिबन्धको सामना गरिरहेको रुसले आफ्नो प्रमुख निर्यातको रुपमा रहेको तेल र ग्याँसको बिक्रीमा बिटक्वाइनमार्फत् पनि भुक्तानी स्वीकार गर्ने तयारी गरिरहेको छ । रुसका एक वरिष्ठ सांसद पाभेल जाभाल्नीका अनुसार मित्रराष्ट्रहरूले तेल र ग्याँसको रकम क्रिप्टोकरेन्सी वा आफ्नो स्थानीय मुद्रामा भुक्तान गर्न सक्नेछन् । </p>
+
+                    </div>
+                </div>
+
+                <div class="col1-news">
+                    <a href="">
+                        <h5 class="h5-main">भारतबाट आयात घटेपछि तीन क्षेत्रका उद्योगको विद्युत् आपूर्ति बन्द भएको छ</h5>
+                    </a>
+
+                    <a href=""><span class="writer">By name of writer</span></a>
+
+                    <div class="news-img">
+                        <div class="newsimg">
+                            <a href=""> <img src="img/news2.jpg" alt=""> </a>
+                        </div>
+                        <p class="p-main">पश्चिमा मुलुकहरूको कडा प्रतिबन्धको सामना गरिरहेको रुसले आफ्नो प्रमुख निर्यातको रुपमा रहेको तेल र ग्याँसको बिक्रीमा बिटक्वाइनमार्फत् पनि भुक्तानी स्वीकार गर्ने तयारी गरिरहेको छ । रुसका एक वरिष्ठ सांसद पाभेल जाभाल्नीका अनुसार मित्रराष्ट्रहरूले तेल र ग्याँसको रकम क्रिप्टोकरेन्सी वा आफ्नो स्थानीय मुद्रामा भुक्तान गर्न सक्नेछन् ।</p>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- =========================column-1========================================================= -->
+
+
+            <!-- -------------------------------------------------column-2---------------------------------- -->
+            <div class="col2">
+                <div class="col2-news border">
+
+                    <div class="news-img">
+                        <div class="newsimg">
+                            <a href=""> <img src="img/mid-news1.png" alt=""> </a>
+                        </div>
+
+                        <a href="">
+                            <h5 class="h5-main">
+                                निर्वाचन आयोगले मतगणनाको भिडियो ट्र्याकिङ गर्ने योजना बनाएको छ</h5>
+                        </a>
+                        <a href=""><span class="writer">By name of writer</span></a>
+
+                        <p class="p-main">पश्चिमा मुलुकहरूको कडा प्रतिबन्धको सामना गरिरहेको रुसले आफ्नो प्रमुख निर्यातको रुपमा रहेको तेल र ग्याँसको बिक्रीमा बिटक्वाइनमार्फत् पनि भुक्तानी स्वीकार गर्ने तयारी गरिरहेको छ । रुसका एक वरिष्ठ सांसद पाभेल जाभाल्नीका अनुसार मित्रराष्ट्रहरूले तेल र ग्याँसको रकम क्रिप्टोकरेन्सी वा आफ्नो स्थानीय मुद्रामा भुक्तान गर्न सक्नेछन् । </p>
+                    </div>
+
+                </div>
+
+
+                <div class="col2-news border">
+
+                    <div class="news-img">
+                        <div class="newsimg">
+                            <a href=""> <img src="img/mid-news2.png" alt=""> </a>
+                        </div>
+
+                        <a href="">
+                            <h5 class="h5-main"> निर्वाचन आयोगले मतगणनाको भिडियो ट्र्याकिङ गर्ने योजना बनाएको छ</h5>
+                        </a>
+                        <a href=""><span class="writer">By name of writer</span></a>
+
+                        <p class="p-main">पश्चिमा मुलुकहरूको कडा प्रतिबन्धको सामना गरिरहेको रुसले आफ्नो प्रमुख निर्यातको रुपमा रहेको तेल र ग्याँसको बिक्रीमा बिटक्वाइनमार्फत् पनि भुक्तानी स्वीकार गर्ने तयारी गरिरहेको छ । रुसका एक वरिष्ठ सांसद पाभेल जाभाल्नीका अनुसार मित्रराष्ट्रहरूले तेल र ग्याँसको रकम क्रिप्टोकरेन्सी वा आफ्नो स्थानीय मुद्रामा भुक्तान गर्न सक्नेछन् । </p>
+                    </div>
+
+                </div>
+
+                <div class="col2-news">
+
+                    <div class="news-img">
+                        <div class="newsimg">
+                            <a href=""> <img src="img/mid-news3.png" alt=""> </a>
+                        </div>
+
+                        <a href="">
+                            <h5 class="h5-main"> निर्वाचन आयोगले मतगणनाको भिडियो ट्र्याकिङ गर्ने योजना बनाएको छ</h5>
+                        </a>
+                        <a href=""><span class="writer">By name of writer</span></a>
+
+                        <p class="p-main">पश्चिमा मुलुकहरूको कडा प्रतिबन्धको सामना गरिरहेको रुसले आफ्नो प्रमुख निर्यातको रुपमा रहेको तेल र ग्याँसको बिक्रीमा बिटक्वाइनमार्फत् पनि भुक्तानी स्वीकार गर्ने तयारी गरिरहेको छ । रुसका एक वरिष्ठ सांसद पाभेल जाभाल्नीका अनुसार मित्रराष्ट्रहरूले तेल र ग्याँसको रकम क्रिप्टोकरेन्सी वा आफ्नो स्थानीय मुद्रामा भुक्तान गर्न सक्नेछन् । </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- -------------------------------------------------column-2---------------------------------- -->
+
+            <!-- ----------------------------------column-3---------------------------------------------------- -->
+
+            <div class="col3">
+
+
+                <div class="col3-news border">
+                    <a href="">
+                        <h5 class="h5-main">भारतबाट आयात घटेपछि तीन क्षेत्रका उद्योगको विद्युत् आपूर्ति बन्द भएको छ</h5>
+                    </a>
+
+                    <a href=""><span class="writer">By name of writer</span></a>
+
+                    <div class="news-img">
+                        <div class="newsimg">
+                            <a href=""><img src="img/news1.jfif" alt=""></a>
+                        </div>
+                        <p class="p-main">पश्चिमा मुलुकहरूको कडा प्रतिबन्धको सामना गरिरहेको रुसले आफ्नो प्रमुख निर्यातको रुपमा रहेको तेल र ग्याँसको बिक्रीमा बिटक्वाइनमार्फत् पनि भुक्तानी स्वीकार गर्ने तयारी गरिरहेको छ । रुसका एक वरिष्ठ सांसद पाभेल जाभाल्नीका अनुसार मित्रराष्ट्रहरूले तेल र ग्याँसको रकम क्रिप्टोकरेन्सी वा आफ्नो स्थानीय मुद्रामा भुक्तान गर्न सक्नेछन् । </p>
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="col3-news border">
+                    <a href="">
+                        <h5 class="h5-main">भारतबाट आयात घटेपछि तीन क्षेत्रका उद्योगको विद्युत् आपूर्ति बन्द भएको छ</h5>
+                    </a>
+
+                    <a href=""><span class="writer">By name of writer</span></a>
+
+                    <div class="news-img">
+                        <div class="newsimg">
+                            <a href=""><img src="img/news2.jpg" alt=""></a>
+                        </div>
+                        <p class="p-main">पश्चिमा मुलुकहरूको कडा प्रतिबन्धको सामना गरिरहेको रुसले आफ्नो प्रमुख निर्यातको रुपमा रहेको तेल र ग्याँसको बिक्रीमा बिटक्वाइनमार्फत् पनि भुक्तानी स्वीकार गर्ने तयारी गरिरहेको छ । रुसका एक वरिष्ठ सांसद पाभेल जाभाल्नीका अनुसार मित्रराष्ट्रहरूले तेल र ग्याँसको रकम क्रिप्टोकरेन्सी वा आफ्नो स्थानीय मुद्रामा भुक्तान गर्न सक्नेछन् । </p>
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="col3-news">
+                    <a href="">
+                        <h5 class="h5-main">भारतबाट आयात घटेपछि तीन क्षेत्रका उद्योगको विद्युत् आपूर्ति बन्द भएको छ</h5>
+                    </a>
+
+                    <a href=""><span class="writer">By name of writer</span></a>
+
+                    <div class="news-img">
+                        <div class="newsimg">
+                            <a href=""><img src="img/news2.jpg" alt=""></a>
+                        </div>
+                        <p class="p-main">पश्चिमा मुलुकहरूको कडा प्रतिबन्धको सामना गरिरहेको रुसले आफ्नो प्रमुख निर्यातको रुपमा रहेको तेल र ग्याँसको बिक्रीमा बिटक्वाइनमार्फत् पनि भुक्तानी स्वीकार गर्ने तयारी गरिरहेको छ । रुसका एक वरिष्ठ सांसद पाभेल जाभाल्नीका अनुसार मित्रराष्ट्रहरूले तेल र ग्याँसको रकम क्रिप्टोकरेन्सी वा आफ्नो स्थानीय मुद्रामा भुक्तान गर्न सक्नेछन् । </p>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------------------------------column-3---------------------------------------------------- -->
+    </section>
+
+
+    <!-- -----------------another-ad----------------------------- -->
+    <div class="ads wrapper">
+        <div class="ad wrapper">
+            <a href=""> <img src="img/ad1.jpeg" alt=""></a>
+        </div>
+    </div>
+    <!-- -----------------another-ad----------------------------- -->
+
+
+
+
+    <!-- ---------------------------another news section---------------------------------------- -->
+
+
+
+
+    <div class="height-less">
+
+        <h2 class="h2-main wrapper heading">
+            ताजा खबर
+        </h2>
+    </div>
+    <div class="news_2 wrapper">
+
+        <div class="col-1">
+            <div class="col-1-news border">
+                <div class="col-1-info">
+                    <a href="">
+                        <h2 class="h2-main">
+                            चिनियाँ विदेशमन्त्री आज काठमाडौं आउँदा केही सम्झौता हुने सम्भावना छ
+                        </h2>
+                    </a>
+                    <a href=""><span class="writer">By the author</span></a>
+                    <div class="image-text">
+
+                        <p class="p-main">
+                            पश्चिमा मुलुकहरूको कडा प्रतिबन्धको सामना गरिरहेको रुसले आफ्नो प्रमुख निर्यातको रुपमा रहेको तेल र ग्याँसको बिक्रीमा बिटक्वाइनमार्फत् पनि भुक्तानी स्वीकार गर्ने तयारी गरिरहेको छ । रुसका एक वरिष्ठ सांसद पाभेल जाभाल्नीका अनुसार मित्रराष्ट्रहरूले तेल र ग्याँसको रकम क्रिप्टोकरेन्सी वा आफ्नो स्थानीय मुद्रामा भुक्तान गर्न सक्नेछन् ।
+
+
+
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="col1-image">
+                    <a href=""> <img src="img/news4.webp" alt=""> </a>
+                </div>
+
+            </div>
+
+            <div class="col-1-news border">
+                <div class="col-1-info">
+                    <a href="">
+                        <h2 class="h2-main">
+                            चिनियाँ विदेशमन्त्री आज काठमाडौं आउँदा केही सम्झौता हुने सम्भावना छ
+                        </h2>
+                    </a>
+                    <a href=""> <span class="writer">By the author</span></a>
+                    <div class="image-text">
+
+                        <p class="p-main">
+                            पश्चिमा मुलुकहरूको कडा प्रतिबन्धको सामना गरिरहेको रुसले आफ्नो प्रमुख निर्यातको रुपमा रहेको तेल र ग्याँसको बिक्रीमा बिटक्वाइनमार्फत् पनि भुक्तानी स्वीकार गर्ने तयारी गरिरहेको छ । रुसका एक वरिष्ठ सांसद पाभेल जाभाल्नीका अनुसार मित्रराष्ट्रहरूले तेल र ग्याँसको रकम क्रिप्टोकरेन्सी वा आफ्नो स्थानीय मुद्रामा भुक्तान गर्न सक्नेछन् ।
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="col1-image">
+                    <a href=""> <img src="img/news3.jpg" alt=""> </a>
+                </div>
+
+            </div>
+
+            <div class="col-1-news">
+                <div class="col-1-info">
+                    <a href="">
+                        <h2 class="h2-main">
+                            काठमाडौं ट्राइनेलेको उचाइ र तराई
+                        </h2>
+                    </a>
+                    <a href=""> <span class="writer">By the author</span></a>
+                    <div class="image-text">
+
+                        <p class="p-main">
+                            पश्चिमा मुलुकहरूको कडा प्रतिबन्धको सामना गरिरहेको रुसले आफ्नो प्रमुख निर्यातको रुपमा रहेको तेल र ग्याँसको बिक्रीमा बिटक्वाइनमार्फत् पनि भुक्तानी स्वीकार गर्ने तयारी गरिरहेको छ । रुसका एक वरिष्ठ सांसद पाभेल जाभाल्नीका अनुसार मित्रराष्ट्रहरूले तेल र ग्याँसको रकम क्रिप्टोकरेन्सी वा आफ्नो स्थानीय मुद्रामा भुक्तान गर्न सक्नेछन् ।
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="col1-image">
+                    <a href=""> <img src="img/news2.jpg" alt=""> </a>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="col-2">
+
+            <div class="ads">
+                <img src="img/aside1.gif" alt="">
+            </div>
+
+            <div class="ads">
+                <img src="img/aside2.gif" alt="">
+            </div>
+
+            <div class="ads">
+                <img src="img/aside3.gif" alt="">
+            </div>
+
+        </div>
+
+    </div>
+
+    </section>
+
+    <!-- ---------------------------another news section---------------------------------------- -->
+
+
+    <h2 class="h2-main wrapper heading">
+        स्थानीय निर्वाचन
+    </h2>
+    <div class="news-slider wrapper">
+
+
+        <div class="news-slide1">
+            <div class="image1">
+                <img src="img/mid-news2.png" alt="election news">
+            </div>
+
+            <div class="text-1">
+                <a href="">
+                    <h5 class="h5-main">
+                        स्थानीय तहको निर्वाचन एकीकृत सुरक्षा नीति पारित
+                    </h5>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="news-slide1">
+            <div class="image1">
+                <img src="img/mid-news1.png" alt="">
+            </div>
+
+            <div class="text-1">
+                <a href="">
+                    <h5 class="h5-main">स्थानीय तहको निर्वाचन एकीकृत सुरक्षा नीति पारित</h5>
+                </a>
+            </div>
+        </div>
+
+        <div class="news-slide1">
+            <div class="image1">
+                <img src="img/mid-news4.jpg" alt="">
+            </div>
+
+            <div class="text-1">
+                <a href="">
+                    <h5 class="h5-main">स्थानीय तहको निर्वाचन एकीकृत सुरक्षा नीति पारित</h5>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="news-slide1">
+            <div class="image1">
+                <img src="img/news2.jpg" alt="">
+            </div>
+
+            <div class="text-1">
+                <a href="">
+                    <h5 class="h5-main">स्थानीय तहको निर्वाचन एकीकृत सुरक्षा नीति पारित</h5>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+    <section id="newsletter">
+        <div class="newstext">
+            <h4>न्यूजलेटरको लागि साइन अप गर्नुहोस्</h4>
+            <p>सूचना प्राप्त गर्न सदस्यता लिनुहोस् <span> विशेष समाचार कथाहरू</span></p>
+        </div>
+
+        <div class="form">
+
+            <input type="text" placeholder="Your email address">
+            <button class="normal" type="submit">साइन अप</button>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="foot wrapper">
+            <div class="foot-1">
+                <h5 class="h5-main">
+                   हाम्रोबारे
+                </h5>
+                <ul>
+                    <a href="">
+                        <li>
+                            पोस्टको बारेमा</li>
+                    </a>
+                    <a href="">
+                        <li>मास्टहेड</li>
+                    </a>
+                    <a href="">
+                        <li>सम्पादकीय मानक र अखण्डता</li>
+                    </a>
+                    <a href="">
+                        <li>
+                            कार्यस्थल उत्पीडन नीति</li>
+                    </a>
+                    <a href="">
+                        <li>
+                            गोपनीयता नीति</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="foot-2">
+                <h5 class="h5-main"> समाचार</h5>
+                <ul>
+                    <a href="">
+                        <li>मुख्य समाचार</li>
+                    </a>
+                    <a href="">
+                        <li>राजनीति</li>
+                    </a>
+                    <a href="">
+                        <li>समाज</li>
+                    </a>
+                    <a href="">
+                        <li>मनोरञ्जन</li>
+                    </a>
+                    <a href="">
+                        <li> जीवनशैली</li>
+                    </a>
+                    <a href="">
+                        <li>व्यापार</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="foot-2">
+                <h5 class="h5-main">
+                    हामीलाई सम्पर्क गर्नुहोस
+                </h5>
+                <ul>
+                    <a href="">
+                        <li>पोर्टलको लागि लेख्नुहोस्</li>
+                    </a>
+                    <a href="">
+                        <li>सम्पादकलाई पत्रहरू</li>
+                    </a>
+                    <a href="">
+                        <li>हामीसँग विज्ञापन गर्नुहोस्</li>
+                    </a>
+                    <a href="">
+                        <li>हाम्रो लागि काम गर्नुहोस्</li>
+                    </a>
+            </div>
+
+            <div class="foot-2">
+                <h5 class="h5-main">
+                    हामीसँग अन्तरक्रिया गर्नुहोस्
+                </h5>
+
+                <div class="icons">
+                    <ul>
+                        <a href="">
+                            <li> <i class="fab fa-facebook"></i></li>
+                        </a><a href="">
+                            <li><i class="fab fa-instagram"></i></li>
+                        </a><a href="">
+                            <li> <i class="fab fa-twitter"></i> </li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="end">
+        <p class="p-main">
+            &copy; २०२२| सबै अधिकार सुरक्षित | समाचार पोर्टल
+        </p>
+    </div>
+</body>
+
+</html>
